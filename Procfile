@@ -1,1 +1,1 @@
-web: gunicorn joinbtc.wsgi:application --log-file -
+web: gunicorn jointbtc.wsgi:application --log-file -
