@@ -9,3 +9,11 @@ This repository is a coding-exercise. **DO NOT USE THIS CODE IN PRODUCTION**... 
 This button will create and deploy a clone of JointBTC. It will not work until a super user is created. To do so, once deployed you should clone the repository and create a new super user manually using this command:
 
     heroku run python manage.py createsuperuser
+
+You can access to a test app using these credentials:
+
+    URL: https://jointbtc.herokuapp.com/admin/
+    Username: admin
+    Password: admin
+
+**Note**: this heroku app has Blockchain API disabled.
