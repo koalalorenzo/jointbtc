@@ -104,7 +104,7 @@ STATICFILES_DIRS = (
 )
 
 # Blockchain data
-BLOCKCHAIN_API_CODE = os.environ.get('BLOCKCHAIN_API_CODE', "True")
+BLOCKCHAIN_API_CODE = os.environ.get('BLOCKCHAIN_API_CODE', "")
 GENERATE_WALLET = os.environ.get('GENERATE_WALLET', "True")
 
 if GENERATE_WALLET == "True":

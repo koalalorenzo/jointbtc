@@ -2,6 +2,30 @@
   "name": "JointBTC",
   "description": "Simple basic example of coin join implementation using python django and blockchain.info",
   "repository": "https://github.com/koalalorenzo/jointbtc",
-  "logo": "",
-  "keywords": ["python", "bitcoin", "django"]
+  "keywords": ["python", "bitcoin", "django"],
+  "scripts": {
+    "postdeploy": "python manage.py syncdb --noinput"
+  },
+  "env": {
+    "GENERATE_WALLET": {
+      "description": "If true it will print in the logs the credential for a new wallet every time the system is started",
+      "value": "False"
+    },
+    "BLOCKCHAIN_API_CODE": {
+      "description": "Secret BLockChain.info API code. Read more here: https://blockchain.info/api/api_create_code",
+      "value": ""
+    },
+    "WALLET_ID": {
+      "description": "The ID of the blockchain.info wallet",
+      "value": ""
+    },
+    "WALLET_PASSWORD": {
+      "description": "The password of the blockchain.info wallet",
+      "value": ""
+    }
+  },
+  "addons": [
+    "openredis"
+  ]
+
 }
