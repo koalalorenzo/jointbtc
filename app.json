@@ -23,9 +23,5 @@
       "description": "The password of the blockchain.info wallet",
       "value": ""
     }
-  },
-  "addons": [
-    "openredis"
-  ]
-
+  }
 }
