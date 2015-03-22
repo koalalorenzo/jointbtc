@@ -6,6 +6,7 @@
   "scripts": {
     "postdeploy": "python manage.py syncdb --noinput"
   },
+  "success_url": "/admin",
   "env": {
     "GENERATE_WALLET": {
       "description": "If true it will print in the logs the credential for a new wallet every time the system is started",
