@@ -1,0 +1,7 @@
+{
+  "name": "JointBTC",
+  "description": "Simple basic example of coin join implementation using python django and blockchain.info",
+  "repository": "https://github.com/koalalorenzo/jointbtc",
+  "logo": "",
+  "keywords": ["python", "bitcoin", "django"]
+}
