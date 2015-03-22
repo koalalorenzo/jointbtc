@@ -1,0 +1,14 @@
+database:
+  image: postgres
+
+web:
+  build: .
+  volumes:
+    - .:/code
+  links:
+   - database
+  ports:
+   - "80:8000"
+   - "8000:8000"
+  environment:
+   - DEBUG=True
